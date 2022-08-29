@@ -30,6 +30,7 @@ function App() {
     }
   };
   const [section1Ref, section1InView] = useInView({ threshold: 0.5 });
+
   return (
     <>
       <Helmet>

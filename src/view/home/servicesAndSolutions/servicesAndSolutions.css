@@ -1,4 +1,11 @@
 .services_and_solutions{
-    height: 500px;
+    /* height: 500px; */
     background: linear-gradient(180deg, #000 50%, #fff 50%);
+    
+}
+
+.services_and_solutions_container{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    margin-bottom: 4rem;
 }

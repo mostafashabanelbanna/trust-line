@@ -5,16 +5,6 @@ import { isEnglish } from "utils/utils";
 import "./hero.css";
 
 const Hero = ({ section1Ref }) => {
-  //   const [del, setDel] = useState(1000);
-
-  // const [textAnim, setTextAnim] = useState(
-
-  //   {
-  //     opac: 1,
-  //     cord: 0,
-  //     imm: false,
-  //   }
-  // );
   const textAnimProps = useSpring({
     from: { opacity: 0, transform: `translateY(50%)` },
     to: {
@@ -29,7 +19,7 @@ const Hero = ({ section1Ref }) => {
   });
 
   return (
-    <header className="hero_container">
+    <header ref={section1Ref} className="hero_container">
       <div className="hero_bg"></div>
       <div className="overlay">
         <animated.div style={textAnimProps}>

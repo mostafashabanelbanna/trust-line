@@ -4,8 +4,8 @@ import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./navigation.css";
 
 //
-import whiteLogo from "../../assets/img/navbar/Group 3.png";
-import coloredLogo from "../../assets/img/navbar/Group 3.png";
+// import whiteLogo from "../../../public/img/navbar/Group 3.png";
+// import coloredLogo from "../../../public/img/navbar/Group 3.png";
 import { Link } from "react-router-dom";
 import translate from "../../i18n/translate";
 import { isEnglish } from "utils/utils";
@@ -52,7 +52,9 @@ const Navigation = ({ handleChageLanguage, currentLang, section1InView }) => {
                 <img
                   className="brand_logo"
                   src={
-                    section1InView || insideContainer ? whiteLogo : coloredLogo
+                    section1InView || insideContainer
+                      ? "img/navbar/logo_white.png"
+                      : "img/navbar/logo_colored.png"
                   }
                   alt="brand_logo"
                 />

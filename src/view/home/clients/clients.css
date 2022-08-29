@@ -1,0 +1,22 @@
+.clients_slide{
+    height: 260px;
+    width: 300px;
+    background-color: #F8F8F8;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: -8px;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: -8px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 30px;
+    color: #842EB3;
+    font-weight: bold;
+}

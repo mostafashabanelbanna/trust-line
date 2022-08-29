@@ -1,0 +1,28 @@
+
+.card_with_icon{
+    padding: 3rem 1rem;
+    background-color: #F8F8F8;
+}
+
+
+.card_with_icon .right_side{
+    position: relative;
+}
+
+.card_with_icon .right_side::before{
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 1px;
+    height: 70px;
+    background-color: #10AFF4;
+}
+
+.card_with_icon h3 {
+    text-align: center;
+    color: var(--skybule-color);
+    /* font-weight: 600; */
+}
+.card_with_icon p {
+    text-align: justify;
+}
