@@ -21,7 +21,6 @@ const Clients = () => {
       </Row>
       <>
         <Swiper
-          slidesPerView={3}
           spaceBetween={2}
           slidesPerGroup={3}
           loop={true}
@@ -29,6 +28,17 @@ const Clients = () => {
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           <SwiperSlide>
             <div className="clients_slide rounded_24 mx-auto">

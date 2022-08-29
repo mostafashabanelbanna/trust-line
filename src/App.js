@@ -46,7 +46,7 @@ function App() {
           <Main>
             <Router section1Ref={section1Ref} />
           </Main>
-          {/* <Footer /> */}
+          <Footer />
         </I18nProvider>
       </CookiesProvider>
     </>
