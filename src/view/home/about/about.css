@@ -1,0 +1,28 @@
+.about_container{
+    padding-top: 8rem;
+}
+
+.about_card p{
+    color: #E7E7E7;
+
+}
+.about_card.small{
+    height: 200px;
+}
+.about_card.large{
+    height: 300px;
+}
+
+.about_card_icon{
+    position: absolute;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .15;
+}
+.about_card_icon.right{
+    right: 0;
+}
+.about_card_icon.left{
+    left: -44px;
+}

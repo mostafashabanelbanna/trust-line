@@ -1,0 +1,12 @@
+.section_title{
+    position: relative;
+    padding-top: 22px;
+}
+.section_title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width:  91.27px;
+  height: 9.13px;
+  background-color: #019FFE;
+}
