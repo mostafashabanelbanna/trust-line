@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* Globale */
+
+/* Start Fonts */
+@font-face {
+  font-family: "Stolzl";
+  src: url("./assets/fonts/Stolzl/Stolzl-Light.eot");
+}
+@font-face {
+  font-family: "NotoSansArabic";
+  src: url("./assets/fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth\,wght.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* End Fonts  */
+:root {
+  --main-color: #903f97;
+
+  --light-color: #a27dcb;
+
+  --helper-color: #9d65c9;
+
+  --dark-color: #423f3f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  /* text-align: right; */
+  font-family: "NotoSansArabic", "Stolzl";
+  box-sizing: border-box;
+  font-weight: 200;
+}
+body{
+  color: #423f3f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.spacer {
+  margin-top: 120px;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: unset;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: inherit;
+}
+.white_btn{
+  color: #000;
+  background-color: #fff;
+  padding:  2px 22px;
+  border-radius: 20.4334px;
+  transition: ease-in-out .3s all;
+}
+.white_btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+.skyblue_btn{
+  color: #fff;
+  background: #019FFE;
+  border-radius: 49.0686px;
+  padding: 10px 28px;
+  font-size: 25px;
+  transition: ease-in-out .3s all;
+}
+.skyblue_btn:hover{
+  color: #019FFE;
+  background: #fff;
+  transform: scale(1.1);
 }
