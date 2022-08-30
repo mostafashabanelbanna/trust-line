@@ -27,3 +27,9 @@
 .about_card_icon.left{
     left: -44px;
 }
+.about_card .img_layer_above{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
