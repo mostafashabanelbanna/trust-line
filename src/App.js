@@ -13,7 +13,7 @@ function App() {
   const [cookies, setCookie] = useCookies(["lang"]);
 
   const [htmlDir, setHtmlDir] = useState(
-    cookies.lang === "en-us" || !cookies.lang ? "ltr" : "rtl"
+    cookies.lang === "ar-eg" || !cookies.lang ? "rtl" : "ltr"
   );
 
   useEffect(() => {
