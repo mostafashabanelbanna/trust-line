@@ -3,13 +3,13 @@ import { LOCALES } from "../locales";
 export default {
   [LOCALES.ENGLISH]: {
     hello: "hello",
-    Packages: "Packages",
-    About: "About",
-    Booking: "Booking",
-    FAQ: "FAQ",
-    EmailExist: "This Email is used",
-    UsernameExist: "This Username is Used",
-    VerificationMessage: "Your Account Activated Successfully",
-    VerificationErrorMessage: "Invalid URL"
+    TrustLine: "Trust Line",
+    WhyTrustLine: "Why Trust Line?",
+    WorkMechanism: "Work mechanism",
+    ContactUs: "Contact Us",
+    Login: "Login",
+    HeroTitle: "Trust Line provides protection for your business",
+    HeroDesciption:
+      "Trust Line is a Saudi company specialized in providing a wide range of cyber security services and solutions.",
   },
 };

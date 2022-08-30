@@ -3,13 +3,13 @@ import { LOCALES } from "../locales";
 export default {
   [LOCALES.ARABIC]: {
     hello: "مرحباً",
-    Packages: "الباقات",
-    About: "نبذة عنا",
-    Booking: "الحجز",
-    FAQ: "أسئلة شائعة",
-    EmailExist: "البريد الألكترونى مستخدم من قبل",
-    UsernameExist: "أسم المستخدم موجود بالفعل",
-    VerificationMessage: "تم تفعيل حسابك بنجاح",
-    VerificationErrorMessage: "رابط غير صالح"
+    TrustLine: "ترست لاين",
+    WhyTrustLine: "لماذا ترست لاين؟ ",
+    WorkMechanism: "آلية العمل",
+    ContactUs: "تواصل معنا",
+    Login: "دخول",
+    HeroTitle: "ترست لاين تقدم لأعمالك الحماية",
+    HeroDesciption:
+      "ترست لاين شركة سعودية متخصصة في تقديم مجموعة واسعة من خدمات وحلول الأمن السيبراني.",
   },
 };

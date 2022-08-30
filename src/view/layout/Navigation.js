@@ -75,16 +75,16 @@ const Navigation = ({ handleChageLanguage, currentLang, section1InView }) => {
               <Offcanvas.Body>
                 <Nav className=" flex-grow-1 px-5">
                   <Nav.Link>
-                    <Link to="/"> {translate("ترست لاين")}</Link>
+                    <Link to="/"> {translate("TrustLine")}</Link>
                   </Nav.Link>
                   <Nav.Link>
-                    <Link to="/"> {translate("لماذا ترست لاين؟ ")}</Link>
+                    <Link to="/"> {translate("WhyTrustLine")}</Link>
                   </Nav.Link>
                   <Nav.Link>
-                    <Link to="/book-now"> {translate("آلية العمل")}</Link>
+                    <Link to="/"> {translate("WorkMechanism")}</Link>
                   </Nav.Link>
                   <Nav.Link>
-                    <Link to="/client"> {translate("تواصل معنا")}</Link>
+                    <Link to="/"> {translate("ContactUs")}</Link>
                   </Nav.Link>
                 </Nav>
 
@@ -92,7 +92,7 @@ const Navigation = ({ handleChageLanguage, currentLang, section1InView }) => {
                   <>
                     <Link className="white_btn mx-5" to="/Login">
                       {" "}
-                      {translate("دخول")}{" "}
+                      {translate("Login")}{" "}
                     </Link>
 
                     <span

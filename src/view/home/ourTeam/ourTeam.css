@@ -1,0 +1,37 @@
+.first_img {
+    width: 40%;
+    height: 34rem;
+    object-fit: cover;
+    
+}
+.second_img {
+    width: 60%;
+    height: 34rem;
+    object-fit: cover;
+
+}
+
+.gray_bg_side_container{
+    position: relative;
+    z-index: -1;
+}
+
+.gray_bg_side{
+    background-color: #F8F8F8;
+    padding: 10rem 2rem ;
+    border-top-left-radius: 24px ;
+    border-bottom-left-radius: 24px;
+}
+
+@media (max-width: 768px){
+    .gray_bg_side{
+        border-radius: 24px;
+        margin-top: 6px;
+    }
+    .second_img {
+        width: 100%;
+    }
+    .first_img {
+        display: none;
+    }
+}

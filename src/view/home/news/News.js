@@ -14,15 +14,13 @@ const data = [
     photo: "Screenshot (184).png",
   },
   {
-    title:
-      "الأمن السيبراني في عام 2022 - نظرة جديدة على بعض الإحصائيات المقلقة للغاية",
+    title: "لماذا يعتبر أمان التطبيق مهمًا للأعمال؟ ",
     description:
       "تطبيقات البرمجيات هي مكونات أساسية لنجاح المنظمة. لسوء الحظ ، بينما التطبيق",
     photo: "Screenshot (185).png",
   },
   {
-    title:
-      "الأمن السيبراني في عام 2022 - نظرة جديدة على بعض الإحصائيات المقلقة للغاية",
+    title: "حشد الأمن - هل هو بديل للاختراق؟",
     description:
       "نمت شعبية برامج الأمن الجماعي إلى الحد الذي وصلت إليه بعض الشركات",
     photo: "Screenshot (185).png",
@@ -39,8 +37,9 @@ const News = () => {
           </Col>
         </Row>
         <Row>
-          {data.map((newsItem) => (
+          {data.map((newsItem, idx) => (
             <ListItem
+              key={idx}
               title={newsItem.title}
               description={newsItem.description}
               photo={newsItem.photo}

@@ -2,6 +2,10 @@
     display: flex;
     background-color: #131414;
     padding: 1rem;
+    transition: all .3s ease-in-out;
+}
+.list_item:hover{
+    transform: scale(1.1);
 }
 .list_item img {
     height: 180px;

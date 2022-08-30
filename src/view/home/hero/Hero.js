@@ -1,3 +1,4 @@
+import translate from "i18n/translate";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
@@ -23,22 +24,12 @@ const Hero = ({ section1Ref }) => {
       <div className="hero_bg"></div>
       <div className="overlay">
         <animated.div style={textAnimProps}>
-          <h1>
-            {isEnglish()
-              ? "ترست لاين تقدم لأعمالك الحماية "
-              : "ترست لاين تقدم لأعمالك الحماية "}
-          </h1>
-          <h5>
-            {isEnglish()
-              ? "ترست لاين شركة سعودية متخصصة في تقديم مجموعة واسعة من خدمات وحلول الأمن السيبراني."
-              : "ترست لاين شركة سعودية متخصصة في تقديم مجموعة واسعة من خدمات وحلول الأمن السيبراني."}
-          </h5>
+          <h1>{translate("HeroTitle")}</h1>
+          <h5>{translate("HeroDesciption")}</h5>
         </animated.div>
         <animated.div style={btnAnimProps}>
           <Link className="d-flex justify-content-center mt-5" to="/">
-            <div className="skyblue_btn">
-              {isEnglish() ? "تواصل معنا" : "تواصل معنا"}
-            </div>
+            <div className="skyblue_btn">{translate("ContactUs")}</div>
           </Link>
         </animated.div>
       </div>
