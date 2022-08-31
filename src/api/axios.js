@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const _PublishedUrl = "http://empf2019-001-site7.htempurl.com/api";
-const _LocalUrl = "https://localhost:7097/api";
+const _PublishedUrl = "https://jsonplaceholder.typicode.com";
 
 const API = axios.create({
   baseURL: _PublishedUrl,
