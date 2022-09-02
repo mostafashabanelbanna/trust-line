@@ -14,6 +14,7 @@ const PostsList = () => {
   const handleClose = () => setShow(false);
 
   const handleShow = () => setShow(true);
+
   useEffect(() => {
     dispatch(resetPost());
     if (!allPosts.length) {
@@ -28,9 +29,23 @@ const PostsList = () => {
         <Row>
           <Col className="d-flex justify-content-between">
             <h3>Posts</h3>
-            <Button variant="outline-primary" size="sm" onClick={handleShow}>
-              Add new Post
-            </Button>
+            <div>
+              <Button
+                className="mx-1"
+                variant="outline-primary"
+                size="sm"
+                onClick={handleShow}
+              >
+                Add new Post
+              </Button>
+              <Button
+                variant="outline-success"
+                size="sm"
+                onClick={() => dispatch(getAllPosts())}
+              >
+                Reset Posts
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>
