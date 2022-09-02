@@ -28,10 +28,12 @@ const FormModal = ({ show, handleClose, post }) => {
       dispatch(editPost({ ...data, id: post.id, userId: post.userId }));
       notifyUpdate();
     } else {
+      // generate new unique id
+      const newPostId = Math.max(...allPosts.map((post) => post.id)) + 1;
       dispatch(
         addPost({
           ...data,
-          id: allPosts.length + 1,
+          id: newPostId,
           userId: Math.trunc(allPosts.length / 10) + 1,
         })
       );
