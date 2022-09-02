@@ -11,5 +11,6 @@ export default {
     HeroTitle: "Trust Line provides protection for your business",
     HeroDesciption:
       "Trust Line is a Saudi company specialized in providing a wide range of cyber security services and solutions.",
+    Posts: "Posts",
   },
 };

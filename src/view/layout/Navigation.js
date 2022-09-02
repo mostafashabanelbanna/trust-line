@@ -86,6 +86,9 @@ const Navigation = ({ handleChageLanguage, currentLang, section1InView }) => {
                   <Nav.Link>
                     <Link to="/"> {translate("ContactUs")}</Link>
                   </Nav.Link>
+                  <Nav.Link>
+                    <Link to="/posts"> {translate("Posts")}</Link>
+                  </Nav.Link>
                 </Nav>
 
                 <Nav className="d-flex align-items-center">
