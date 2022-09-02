@@ -1,26 +1,46 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllPosts } from "redux/actions/posts";
+import { getAllPosts, resetPost } from "redux/actions/posts";
+import Loading from "view/uiElements/loading/Loading";
+import Post from "view/uiElements/post/Post";
+import FormModal from "../formModal/formModal";
 
 const PostsList = () => {
+  const [show, setShow] = useState(false);
+
   const allPosts = useSelector((state) => state.posts.allPosts);
   const dispatch = useDispatch();
+  const handleClose = () => setShow(false);
 
-  console.log(allPosts);
+  const handleShow = () => setShow(true);
   useEffect(() => {
-    dispatch(getAllPosts());
+    dispatch(resetPost());
+    if (!allPosts.length) {
+      dispatch(getAllPosts());
+    }
   }, [dispatch]);
 
   return (
     <section className="spacer">
-      {/* {!allPosts.length && <Spinner />} */}
+      <Container className="mb-4">
+        <FormModal show={show} handleClose={handleClose} />
+        <Row>
+          <Col className="d-flex justify-content-between">
+            <h3>Posts</h3>
+            <Button variant="outline-primary" size="sm" onClick={handleShow}>
+              Add new Post
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+      {!allPosts.length && <Loading />}
       {allPosts.length && (
         <Container>
           <Row>
-            {allPosts.map((post, idx) => (
-              <Col md={4} sm={6}>
-                <h3>{post.title}</h3>
+            {allPosts.map(({ id, title, body }) => (
+              <Col key={id} md={4} sm={6} className="mb-2">
+                <Post id={id} title={title} body={body} />
               </Col>
             ))}
           </Row>
